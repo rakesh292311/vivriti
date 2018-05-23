@@ -73,7 +73,7 @@ def main():
 
     
 
-	soup = BeautifulSoup(res.text)
+	soup = BeautifulSoup(res.text, "lxml")
 
     
 
