@@ -50,24 +50,22 @@ def main():
 
 	url = base_url+movie_search+'&s=all'
 
-    
-
 	title_search = re.compile('/title/tt\d+')
 
+    
     
 
 	br = mechanicalsoup.StatefulBrowser()
 
     
-    
 
-                     
 
 	br.open(url)
 
 
 
-	link = br.find_link(url_regex = re.compile(r'/title/tt.*'))
+	link = br.find_link(url_regex = re.compile(r'fn_al_tt_1'))
+
 
 	res = br.follow_link(link)
 
